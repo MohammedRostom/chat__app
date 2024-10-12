@@ -1,6 +1,6 @@
+import 'package:apply_pagenation/features/Auth/peresentaion/view/splach/widget/Icon.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/Assets/Assets.dart';
 import '../../../../../core/Constant/ComMettods.dart';
 import '../../../../../core/Constant/constants.dart';
 import '../../../../MainHome/peresentaion/view/Hompage/homePage.dart';
@@ -39,25 +39,6 @@ class _SpachScreenState extends State<SpachScreen> {
           ],
         ),
       ),
-    );
-  }
-}
-
-class whatsUpIcon extends StatelessWidget {
-  const whatsUpIcon({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset(
-          Assets.Logo,
-          width: 150,
-        ),
-        Text("Whats up")
-      ],
     );
   }
 }
