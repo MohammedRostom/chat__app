@@ -32,7 +32,7 @@ class _SpachScreenState extends State<SpachScreen> {
               children: [
                 whatsUpIcon(),
                 Text(
-                    "This The Bes App  For this CountryThis The Bes App  For this CountryThis The Bes App  For this Country",
+                    "The Bes App  For this CountryThis The Bes App  For this CountryThis The Bes App  For this Country",
                     style: TextStyle(fontSize: 12, color: Colors.green))
               ],
             )
