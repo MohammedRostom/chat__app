@@ -1,3 +1,4 @@
+import 'package:apply_pagenation/core/Constant/constants.dart';
 import 'package:apply_pagenation/features/Auth/peresentaion/view/splach/widget/Icon.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -17,10 +18,12 @@ class _SpachScreenState extends State<SpachScreen> {
   @override
   void initState() {
     // TODO: implement initState
-    NavgateTo(context, Widget: homePage(), time: 3);
+    // NavgateTo(context, Widget: homePage(), time: 3);
   }
 
   Widget build(BuildContext context) {
+    print(HighOfScreen(context));
+    print(WidthOfScreen(context));
     return Scaffold(
       body: screenBodySize(
         widget: Column(
