@@ -1,5 +1,6 @@
-import 'package:apply_pagenation/core/Theme/Colors.dart';
-import 'package:apply_pagenation/core/Constant/size_fonts.dart';
+import 'package:Chat_app/core/Constant/Icons_size.dart';
+import 'package:Chat_app/core/Constant/fonts_size.dart';
+import 'package:Chat_app/core/Theme/Colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,7 +24,8 @@ class AppTheme {
         titleSmall: TextStyle(
             fontSize: FontSize.S_Size, color: AppColors.BLackTextColor),
       ),
-      iconTheme: IconThemeData(color: AppColors.BLackTextColor, size: 40.r));
+      iconTheme:
+          IconThemeData(color: AppColors.BLackTextColor, size: IconsAppSize));
 
   static final ThemeData DarkTheme = ThemeData(
       useMaterial3: false,
@@ -43,5 +45,6 @@ class AppTheme {
         titleSmall:
             TextStyle(fontSize: FontSize.S_Size, color: AppColors.WhiteColor),
       ),
-      iconTheme: IconThemeData(color: AppColors.BLackTextColor, size: 40.r));
+      iconTheme:
+          IconThemeData(color: AppColors.BLackTextColor, size: IconsAppSize));
 }

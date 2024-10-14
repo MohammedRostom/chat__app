@@ -1,6 +1,6 @@
-import 'package:apply_pagenation/core/Assets/Assets.dart';
-import 'package:apply_pagenation/core/Constant/size_screen.dart';
 import 'package:flutter/material.dart';
+import '../../../../../../core/Assets/Assets.dart';
+import '../../../../../../core/Constant/Icons_size.dart';
 
 class whatsUpIcon extends StatelessWidget {
   const whatsUpIcon({

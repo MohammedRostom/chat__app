@@ -1,6 +1,6 @@
-import 'package:apply_pagenation/core/Constant/size_screen.dart';
-import 'package:apply_pagenation/core/Theme/Colors.dart';
-import 'package:apply_pagenation/features/Auth/peresentaion/view/splach/widget/whtaspp_Icon.dart';
+import 'package:Chat_app/core/Constant/screen_size.dart';
+import 'package:Chat_app/core/Theme/Colors.dart';
+import 'package:Chat_app/features/Auth/peresentaion/view/splach/widget/whtaspp_Icon.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/Components/screenBodySize.dart';
 import '../../../../../generated/l10n.dart';

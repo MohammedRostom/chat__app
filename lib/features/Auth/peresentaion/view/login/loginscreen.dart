@@ -1,4 +1,4 @@
-import 'package:apply_pagenation/core/Components/screenBodySize.dart';
+import 'package:Chat_app/core/Components/screenBodySize.dart';
 import 'package:flutter/material.dart';
 
 class Loginscreen extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:apply_pagenation/core/Constant/size_screen.dart';
+import 'package:Chat_app/core/Constant/screen_size.dart';
 import 'package:flutter/material.dart';
 
 class screenBodySize extends StatelessWidget {

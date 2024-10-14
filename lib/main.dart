@@ -1,5 +1,5 @@
-import 'package:apply_pagenation/core/Theme/Style.dart';
-import 'package:apply_pagenation/core/routing/routing.dart';
+import 'package:Chat_app/core/Theme/Style.dart';
+import 'package:Chat_app/core/routing/routing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../generated/l10n.dart';
@@ -41,9 +41,11 @@ class matreial_app extends StatelessWidget {
       ],
       supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
+      // routhing
       routes: Routeing.MapOfAppRoutes,
-      initialRoute: Routeing.Start,
+      initialRoute: Routeing.Login,
       theme: AppTheme.LighTheme,
+      // Themes
       darkTheme: AppTheme.DarkTheme,
       themeMode: ThemeMode.light,
     );
