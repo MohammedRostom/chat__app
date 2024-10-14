@@ -1,6 +1,6 @@
 import 'package:apply_pagenation/core/Assets/Assets.dart';
+import 'package:apply_pagenation/core/Constant/size_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class whatsUpIcon extends StatelessWidget {
   const whatsUpIcon({
@@ -13,9 +13,12 @@ class whatsUpIcon extends StatelessWidget {
       children: [
         Image.asset(
           Assets.Logo,
-          width: 150.r,
+          width: WhatssAppIcon,
         ),
-        const Text("Whats up")
+        Text(
+          "Whats up",
+          style: Theme.of(context).textTheme.titleMedium!,
+        )
       ],
     );
   }

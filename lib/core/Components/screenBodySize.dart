@@ -1,4 +1,4 @@
-import 'package:apply_pagenation/core/Constant/constants.dart';
+import 'package:apply_pagenation/core/Constant/size_screen.dart';
 import 'package:flutter/material.dart';
 
 class screenBodySize extends StatelessWidget {
@@ -9,9 +9,15 @@ class screenBodySize extends StatelessWidget {
   final Widget widget;
   @override
   Widget build(BuildContext context) {
-    return Container(
-        height: HighOfScreen(context),
-        width: WidthOfScreen(context),
-        child: widget);
+    return Padding(
+      padding: EdgeInsets.only(
+          left: MarginSideScreen,
+          right: MarginSideScreen,
+          top: MarginTopOrBottomScreen),
+      child: Container(
+          height: HighOfScreen(context),
+          width: WidthOfScreen(context),
+          child: widget),
+    );
   }
 }

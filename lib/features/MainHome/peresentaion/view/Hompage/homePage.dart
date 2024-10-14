@@ -1,8 +1,8 @@
-import 'package:apply_pagenation/core/Constant/constants.dart';
+import 'package:apply_pagenation/core/Constant/size_screen.dart';
 import 'package:flutter/material.dart';
 
-class homePage extends StatelessWidget {
-  const homePage({super.key});
+class homescreen extends StatelessWidget {
+  const homescreen({super.key});
 
   @override
   Widget build(BuildContext context) {

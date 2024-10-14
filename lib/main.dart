@@ -1,3 +1,5 @@
+import 'package:apply_pagenation/core/Theme/Style.dart';
+import 'package:apply_pagenation/core/routing/routing.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,8 +20,21 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) => MaterialApp(
+        locale: Locale("en"),
+        localizationsDelegates: [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
-        home: SpachScreen(),
+        debugShowCheckedModeBanner: false,
+        routes: Routeing.MapOfAppRoutes,
+        initialRoute: Routeing.Start,
+        theme: AppTheme.LighTheme,
+        darkTheme: AppTheme.DarkTheme,
+        themeMode: ThemeMode.light,
       ),
     );
   }
