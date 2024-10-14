@@ -1,8 +1,9 @@
 import 'package:apply_pagenation/features/Auth/peresentaion/view/splach/widget/Icon.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../../../../core/Components/screenBodySize.dart';
 import '../../../../../core/Constant/ComMettods.dart';
-import '../../../../../core/Constant/constants.dart';
+
 import '../../../../MainHome/peresentaion/view/Hompage/homePage.dart';
 
 class SpachScreen extends StatefulWidget {
@@ -21,19 +22,16 @@ class _SpachScreenState extends State<SpachScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: HighOfScreen(context),
-        width: WidthOfScreen(context),
-        child: Column(
+      body: screenBodySize(
+        widget: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Column(
               children: [
                 whatsUpIcon(),
-                Text(
-                    "The Bes App  For this CountryThis The Bes App  For this CountryThis The Bes App  For this Country",
-                    style: TextStyle(fontSize: 12, color: Colors.green))
+                Text("The Best App  For this Country",
+                    style: TextStyle(fontSize: 12.sp, color: Colors.green))
               ],
             )
           ],
