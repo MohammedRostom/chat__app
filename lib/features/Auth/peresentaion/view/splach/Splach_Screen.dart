@@ -2,11 +2,8 @@ import 'package:apply_pagenation/core/Constant/size_screen.dart';
 import 'package:apply_pagenation/core/Theme/Colors.dart';
 import 'package:apply_pagenation/features/Auth/peresentaion/view/splach/widget/whtaspp_Icon.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../../core/Components/screenBodySize.dart';
-import '../../../../../core/comm_methods/ComMethods.dart';
-
-import '../../../../MainHome/peresentaion/view/Hompage/homePage.dart';
+import '../../../../../generated/l10n.dart';
 
 class SpachScreen extends StatefulWidget {
   const SpachScreen({super.key});
@@ -34,7 +31,7 @@ class _SpachScreenState extends State<SpachScreen> {
             Column(
               children: [
                 whatsUpIcon(),
-                Text("The Best App  For this Country",
+                Text(S.of(context).Best_app,
                     style: Theme.of(context)
                         .textTheme
                         .titleSmall!
