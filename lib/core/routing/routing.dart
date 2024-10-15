@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 class Routeing {
   static final Start = "/";
   static final Home = "Home";
-  static final Login = "Home";
-  static final Signup = "Home";
+  static final Login = "Login";
+  static final Signup = "Signup";
 
   static Map<String, Widget Function(BuildContext)> MapOfAppRoutes = {
     Start: (context) => SpachScreen(),

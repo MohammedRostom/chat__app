@@ -11,12 +11,14 @@ class AppTheme {
       colorScheme: ThemeData().colorScheme.copyWith(
             brightness: Brightness.light,
             primaryContainer: AppColors.PrimaryContainerColor,
+            primary: AppColors.PrimaryContainerColor,
+            secondary: AppColors.SeconoryContainerColor,
             secondaryContainer: AppColors.SeconoryContainerColor,
           ),
       scaffoldBackgroundColor: Colors.white,
       textTheme: TextTheme(
-        headlineLarge: TextStyle(
-            fontSize: FontSize.HederSize, color: AppColors.BLackTextColor),
+        headlineLarge:
+            TextStyle(fontSize: FontSize.H3, color: AppColors.BLackTextColor),
         titleLarge: TextStyle(
             fontSize: FontSize.TitleSize, color: AppColors.BLackTextColor),
         titleMedium: TextStyle(
@@ -34,10 +36,11 @@ class AppTheme {
             primaryContainer: AppColors.PrimaryContainerColor,
             secondaryContainer: AppColors.SeconoryContainerColor,
           ),
-      scaffoldBackgroundColor: Colors.lightGreen.withOpacity(0.5),
+      scaffoldBackgroundColor:
+          const Color.fromARGB(255, 17, 17, 17).withOpacity(0.5),
       textTheme: TextTheme(
-        headlineLarge: TextStyle(
-            fontSize: FontSize.HederSize, color: AppColors.WhiteColor),
+        headlineLarge:
+            TextStyle(fontSize: FontSize.H3, color: AppColors.WhiteColor),
         titleLarge: TextStyle(
             fontSize: FontSize.TitleSize, color: AppColors.WhiteColor),
         titleMedium: TextStyle(

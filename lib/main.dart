@@ -43,7 +43,7 @@ class matreial_app extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // routhing
       routes: Routeing.MapOfAppRoutes,
-      initialRoute: Routeing.Login,
+      initialRoute: Routeing.Start,
       theme: AppTheme.LighTheme,
       // Themes
       darkTheme: AppTheme.DarkTheme,

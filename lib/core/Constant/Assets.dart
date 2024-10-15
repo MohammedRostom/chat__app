@@ -1,4 +1,4 @@
 class Assets {
-  static final CommPath = "lib/core/Assets/imgs";
-  static final Logo = "$CommPath/logo.png";
+  static final CommPath = "lib/Assets/imgs";
+  static final Logo = "$CommPath/logo.jpg";
 }

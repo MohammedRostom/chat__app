@@ -13,7 +13,7 @@ class whatsUpIcon extends StatelessWidget {
       children: [
         Image.asset(
           Assets.Logo,
-          width: WhatssAppIcon,
+          width: WhatsAppIconSize,
         ),
         Text(
           "Whats up",
