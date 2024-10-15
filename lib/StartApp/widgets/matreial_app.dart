@@ -1,28 +1,8 @@
 import 'package:Chat_app/core/Theme/Style.dart';
 import 'package:Chat_app/core/routing/routing.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../generated/l10n.dart';
+import '../../../generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: Size(360, 690),
-      minTextAdapt: true,
-      splitScreenMode: true,
-      builder: (context, child) => matreial_app(),
-    );
-  }
-}
 
 class matreial_app extends StatelessWidget {
   const matreial_app({

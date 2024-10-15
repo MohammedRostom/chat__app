@@ -1,3 +1,4 @@
+import 'package:Chat_app/core/Components/Gap_Releted.dart';
 import 'package:flutter/material.dart';
 import '../../../../../../core/Constant/Assets.dart';
 import '../../../../../../core/Constant/Icons_size.dart';
@@ -15,9 +16,10 @@ class whatsUpIcon extends StatelessWidget {
           Assets.Logo,
           width: WhatsAppIconSize,
         ),
+        Gap_Releted(),
         Text(
           "Whats up",
-          style: Theme.of(context).textTheme.titleMedium!,
+          style: Theme.of(context).textTheme.titleLarge!,
         )
       ],
     );

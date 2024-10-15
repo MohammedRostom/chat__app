@@ -1,8 +1,12 @@
+import 'package:Chat_app/core/Components/Gap_Releted.dart';
 import 'package:Chat_app/core/Constant/screen_size.dart';
 import 'package:Chat_app/core/Theme/Colors.dart';
+import 'package:Chat_app/features/Auth/peresentaion/view/login/loginscreen.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/splach/widget/whtaspp_Icon.dart';
+import 'package:Chat_app/features/MainHome/peresentaion/view/Hompage/homePage.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/Components/screenBodySize.dart';
+import '../../../../../core/comm_methods/ComMethods.dart';
 import '../../../../../generated/l10n.dart';
 
 class SpachScreen extends StatefulWidget {
@@ -16,7 +20,7 @@ class _SpachScreenState extends State<SpachScreen> {
   @override
   void initState() {
     // TODO: implement initState
-    // NavgateTo(context, Widget: homePage(), time: 3);
+    NavgateTo(context, Widget: Loginscreen(), time: 3);
   }
 
   Widget build(BuildContext context) {
@@ -31,6 +35,7 @@ class _SpachScreenState extends State<SpachScreen> {
             Column(
               children: [
                 whatsUpIcon(),
+                Gap_Releted(),
                 Text(S.of(context).Best_app,
                     style: Theme.of(context)
                         .textTheme

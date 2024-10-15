@@ -2,7 +2,6 @@ import 'package:Chat_app/core/Constant/Icons_size.dart';
 import 'package:Chat_app/core/Constant/fonts_size.dart';
 import 'package:Chat_app/core/Theme/Colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 // 60 White ,30 Green  10 Grey  Container
 class AppTheme {
