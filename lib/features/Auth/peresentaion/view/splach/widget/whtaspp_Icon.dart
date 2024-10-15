@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../../../../core/Assets/Assets.dart';
+import '../../../../../../core/Constant/Assets.dart';
 import '../../../../../../core/Constant/Icons_size.dart';
 
 class whatsUpIcon extends StatelessWidget {
