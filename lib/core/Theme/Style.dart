@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 // 60 White ,30 Green  10 Grey  Container
 class AppTheme {
   static final ThemeData LighTheme = ThemeData(
+      primaryColor: AppColors.PrimaryContainerColor,
       useMaterial3: false,
       colorScheme: ThemeData().colorScheme.copyWith(
             brightness: Brightness.light,
@@ -14,6 +15,7 @@ class AppTheme {
             secondary: AppColors.SeconoryContainerColor,
             secondaryContainer: AppColors.SeconoryContainerColor,
           ),
+      appBarTheme: AppBarTheme(backgroundColor: AppColors.AppBarLightColor),
       scaffoldBackgroundColor: Colors.white,
       textTheme: TextTheme(
         headlineLarge:
@@ -28,13 +30,23 @@ class AppTheme {
       iconTheme:
           IconThemeData(color: AppColors.BLackTextColor, size: IconsAppSize));
 
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++
   static final ThemeData DarkTheme = ThemeData(
+      primaryColor: AppColors.PrimaryContainerColor,
       useMaterial3: false,
       colorScheme: ThemeData().colorScheme.copyWith(
             brightness: Brightness.dark,
             primaryContainer: AppColors.PrimaryContainerColor,
             secondaryContainer: AppColors.SeconoryContainerColor,
           ),
+      appBarTheme: AppBarTheme(backgroundColor: Colors.black12),
       scaffoldBackgroundColor:
           const Color.fromARGB(255, 17, 17, 17).withOpacity(0.5),
       textTheme: TextTheme(
@@ -48,5 +60,5 @@ class AppTheme {
             TextStyle(fontSize: FontSize.S_Size, color: AppColors.WhiteColor),
       ),
       iconTheme:
-          IconThemeData(color: AppColors.BLackTextColor, size: IconsAppSize));
+          IconThemeData(color: AppColors.WhiteColor, size: IconsAppSize));
 }

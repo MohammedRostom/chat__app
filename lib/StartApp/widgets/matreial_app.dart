@@ -1,6 +1,7 @@
 import 'package:Chat_app/core/Theme/Style.dart';
 import 'package:Chat_app/core/routing/routing.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../../../generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
@@ -11,6 +12,9 @@ class matreial_app extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent, // Transparent status bar
+    ));
     return MaterialApp(
       locale: Locale("en"),
       localizationsDelegates: [
@@ -23,7 +27,7 @@ class matreial_app extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // routhing
       routes: Routeing.MapOfAppRoutes,
-      initialRoute: Routeing.Start,
+      initialRoute: Routeing.Home,
       theme: AppTheme.LighTheme,
       // Themes
       darkTheme: AppTheme.DarkTheme,
