@@ -27,11 +27,11 @@ class matreial_app extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // routhing
       routes: Routeing.MapOfAppRoutes,
-      initialRoute: Routeing.Home,
+      initialRoute: Routeing.Layout_home,
       theme: AppTheme.LighTheme,
       // Themes
       darkTheme: AppTheme.DarkTheme,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
     );
   }
 }

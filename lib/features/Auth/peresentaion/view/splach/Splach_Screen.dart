@@ -3,7 +3,7 @@ import 'package:Chat_app/core/Constant/screen_size.dart';
 import 'package:Chat_app/core/Theme/Colors.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/login/loginscreen.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/splach/widget/whtaspp_Icon.dart';
-import 'package:Chat_app/features/MainHome/peresentaion/view/Hompage/homePage.dart';
+import 'package:Chat_app/features/MainHome/peresentaion/view/layout/Layout_home.dart';
 import 'package:flutter/material.dart';
 import '../../../../../core/Components/screenBodySize.dart';
 import '../../../../../core/comm_methods/ComMethods.dart';

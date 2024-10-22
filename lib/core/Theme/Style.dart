@@ -21,7 +21,9 @@ class AppTheme {
         headlineLarge:
             TextStyle(fontSize: FontSize.H3, color: AppColors.BLackTextColor),
         titleLarge: TextStyle(
-            fontSize: FontSize.TitleSize, color: AppColors.BLackTextColor),
+            overflow: TextOverflow.ellipsis,
+            fontSize: FontSize.TitleSize,
+            color: AppColors.BLackTextColor),
         titleMedium: TextStyle(
             fontSize: FontSize.SubTitleSize, color: AppColors.BLackTextColor),
         titleSmall: TextStyle(
@@ -30,14 +32,19 @@ class AppTheme {
       iconTheme:
           IconThemeData(color: AppColors.BLackTextColor, size: IconsAppSize));
 
-// +++++++++++++++++++++++++++++++++++++++++++++
-// +++++++++++++++++++++++++++++++++++++++++++++
-// +++++++++++++++++++++++++++++++++++++++++++++
-// +++++++++++++++++++++++++++++++++++++++++++++
-// +++++++++++++++++++++++++++++++++++++++++++++
-// +++++++++++++++++++++++++++++++++++++++++++++
-// +++++++++++++++++++++++++++++++++++++++++++++
-// +++++++++++++++++++++++++++++++++++++++++++++
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+// +++++++++++++++++++++++++++++++++++++++++++++============================================================================
+
   static final ThemeData DarkTheme = ThemeData(
       primaryColor: AppColors.PrimaryContainerColor,
       useMaterial3: false,
@@ -46,9 +53,9 @@ class AppTheme {
             primaryContainer: AppColors.PrimaryContainerColor,
             secondaryContainer: AppColors.SeconoryContainerColor,
           ),
-      appBarTheme: AppBarTheme(backgroundColor: Colors.black12),
-      scaffoldBackgroundColor:
-          const Color.fromARGB(255, 17, 17, 17).withOpacity(0.5),
+      appBarTheme:
+          AppBarTheme(backgroundColor: Color.fromARGB(127, 22, 22, 22)),
+      scaffoldBackgroundColor: AppColors.BLackTextColor,
       textTheme: TextTheme(
         headlineLarge:
             TextStyle(fontSize: FontSize.H3, color: AppColors.WhiteColor),
