@@ -31,7 +31,7 @@ class matreial_app extends StatelessWidget {
       theme: AppTheme.LighTheme,
       // Themes
       darkTheme: AppTheme.DarkTheme,
-      themeMode: ThemeMode.dark,
+      themeMode: ThemeMode.light,
     );
   }
 }
