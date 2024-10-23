@@ -18,16 +18,23 @@ class AppTheme {
       appBarTheme: AppBarTheme(backgroundColor: AppColors.AppBarLightColor),
       scaffoldBackgroundColor: Colors.white,
       textTheme: TextTheme(
-        headlineLarge:
-            TextStyle(fontSize: FontSize.H3, color: AppColors.BLackTextColor),
+        headlineLarge: TextStyle(
+            fontSize: FontSize.H3,
+            color: AppColors.BLackTextColor,
+            fontFamily: "sansa"),
         titleLarge: TextStyle(
             overflow: TextOverflow.ellipsis,
             fontSize: FontSize.TitleSize,
-            color: AppColors.BLackTextColor),
+            color: AppColors.BLackTextColor,
+            fontFamily: "sansa"),
         titleMedium: TextStyle(
-            fontSize: FontSize.SubTitleSize, color: AppColors.BLackTextColor),
+            fontSize: FontSize.SubTitleSize,
+            color: AppColors.BLackTextColor,
+            fontFamily: "sansa"),
         titleSmall: TextStyle(
-            fontSize: FontSize.S_Size, color: AppColors.BLackTextColor),
+            fontSize: FontSize.S_Size,
+            color: AppColors.BLackTextColor,
+            fontFamily: "sansa"),
       ),
       iconTheme:
           IconThemeData(color: AppColors.BLackTextColor, size: IconsAppSize));
@@ -57,14 +64,22 @@ class AppTheme {
           AppBarTheme(backgroundColor: Color.fromARGB(127, 22, 22, 22)),
       scaffoldBackgroundColor: AppColors.BLackTextColor,
       textTheme: TextTheme(
-        headlineLarge:
-            TextStyle(fontSize: FontSize.H3, color: AppColors.WhiteColor),
+        headlineLarge: TextStyle(
+            fontSize: FontSize.H3,
+            color: AppColors.WhiteColor,
+            fontFamily: "sansa"),
         titleLarge: TextStyle(
-            fontSize: FontSize.TitleSize, color: AppColors.WhiteColor),
+            fontSize: FontSize.TitleSize,
+            color: AppColors.WhiteColor,
+            fontFamily: "sansa"),
         titleMedium: TextStyle(
-            fontSize: FontSize.SubTitleSize, color: AppColors.WhiteColor),
-        titleSmall:
-            TextStyle(fontSize: FontSize.S_Size, color: AppColors.WhiteColor),
+            fontSize: FontSize.SubTitleSize,
+            color: AppColors.WhiteColor,
+            fontFamily: "sansa"),
+        titleSmall: TextStyle(
+            fontSize: FontSize.S_Size,
+            color: AppColors.WhiteColor,
+            fontFamily: "sansa"),
       ),
       iconTheme:
           IconThemeData(color: AppColors.WhiteColor, size: IconsAppSize));

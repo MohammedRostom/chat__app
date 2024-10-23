@@ -20,7 +20,7 @@ class Chatitem extends StatelessWidget {
           Row(
             children: [
               CircleAvatar(
-                radius: 30.r,
+                radius: 25.r,
               ),
               const Gap_Releted(),
               Column(

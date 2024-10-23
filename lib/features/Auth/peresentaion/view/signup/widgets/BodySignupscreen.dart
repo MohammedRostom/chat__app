@@ -1,6 +1,5 @@
 import 'package:Chat_app/core/Components/Gap_NotReleted.dart';
 import 'package:Chat_app/core/Components/Gap_Releted.dart';
-import 'package:Chat_app/features/Auth/peresentaion/view/login/widgets/Form_section.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/signup/widgets/Form_section.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/signup/widgets/Hero_section2.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/signup/widgets/Loginetion_section.dart';
