@@ -1,4 +1,3 @@
-import 'package:Chat_app/StartApp/main.dart';
 import 'package:Chat_app/core/Components/Cust_text.dart';
 import 'package:Chat_app/core/Components/Gap_Releted.dart';
 import 'package:Chat_app/core/Constant/Assets.dart';
