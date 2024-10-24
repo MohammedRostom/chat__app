@@ -19,22 +19,22 @@ class AppTheme {
       scaffoldBackgroundColor: Colors.white,
       textTheme: TextTheme(
         headlineLarge: TextStyle(
-            fontSize: FontSize.H3,
+            fontSize: FontSize.H1,
             color: AppColors.BLackTextColor,
-            fontFamily: "sansa"),
+            fontFamily: FontFamily),
         titleLarge: TextStyle(
             overflow: TextOverflow.ellipsis,
             fontSize: FontSize.TitleSize,
             color: AppColors.BLackTextColor,
-            fontFamily: "sansa"),
+            fontFamily: FontFamily),
         titleMedium: TextStyle(
             fontSize: FontSize.SubTitleSize,
             color: AppColors.BLackTextColor,
-            fontFamily: "sansa"),
+            fontFamily: FontFamily),
         titleSmall: TextStyle(
             fontSize: FontSize.S_Size,
             color: AppColors.BLackTextColor,
-            fontFamily: "sansa"),
+            fontFamily: FontFamily),
       ),
       iconTheme:
           IconThemeData(color: AppColors.BLackTextColor, size: IconsAppSize));
@@ -65,21 +65,21 @@ class AppTheme {
       scaffoldBackgroundColor: AppColors.BLackTextColor,
       textTheme: TextTheme(
         headlineLarge: TextStyle(
-            fontSize: FontSize.H3,
+            fontSize: FontSize.H2,
             color: AppColors.WhiteColor,
-            fontFamily: "sansa"),
+            fontFamily: FontFamily),
         titleLarge: TextStyle(
             fontSize: FontSize.TitleSize,
             color: AppColors.WhiteColor,
-            fontFamily: "sansa"),
+            fontFamily: FontFamily),
         titleMedium: TextStyle(
             fontSize: FontSize.SubTitleSize,
             color: AppColors.WhiteColor,
-            fontFamily: "sansa"),
+            fontFamily: FontFamily),
         titleSmall: TextStyle(
             fontSize: FontSize.S_Size,
             color: AppColors.WhiteColor,
-            fontFamily: "sansa"),
+            fontFamily: FontFamily),
       ),
       iconTheme:
           IconThemeData(color: AppColors.WhiteColor, size: IconsAppSize));

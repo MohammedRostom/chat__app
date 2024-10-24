@@ -9,11 +9,20 @@ class call_screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: screenBodySize(
-        widget: Center(
-          child: Cust_text(
-              TeStyle: ThemeText(context).titleLarge!, TextT: "call_screen"),
-        ),
+      body: Column(
+        children: [
+          Text(
+            "softWrap ?softWrap ?softWrap ?softWrap ?softWrap ?softWrap ?softWrap ?softWrap ?",
+            softWrap: false,
+          ),
+          screenBodySize(
+            widget: Center(
+              child: Cust_text(
+                  TeStyle: ThemeText(context).titleLarge!,
+                  TextT: "call_screen"),
+            ),
+          ),
+        ],
       ),
     );
   }

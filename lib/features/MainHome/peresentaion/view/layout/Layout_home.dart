@@ -25,8 +25,11 @@ class _HomeScreenState extends State<layout_home>
 
   @override
   Widget build(BuildContext context) {
+    print(tabController.index);
     return Scaffold(
-        floatingActionButton: Action_btn(),
+        floatingActionButton: Action_btn(
+          controller: tabController,
+        ),
         appBar: cus_Appbar(context, tabController),
         body: screenBodySize(
           TopMargin: 0,

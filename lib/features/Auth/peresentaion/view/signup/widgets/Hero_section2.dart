@@ -30,7 +30,7 @@ class Hero_section2 extends StatelessWidget {
                   "Create new Account",
                   textAlign: TextAlign.left,
                   style: ThemeText(context).titleLarge!.copyWith(
-                        fontSize: FontSize.H3,
+                        fontSize: FontSize.H2,
                       ),
                 ),
               ),

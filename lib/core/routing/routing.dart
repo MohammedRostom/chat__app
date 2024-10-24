@@ -1,3 +1,5 @@
+import 'package:Chat_app/features/AddStory/peresentaion/view/OurStatus/our_status.dart';
+import 'package:Chat_app/features/AddStory/peresentaion/view/addstory/addstory.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/login/loginscreen.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/signup/signupscreen.dart';
 import 'package:Chat_app/features/Auth/peresentaion/view/splach/Splach_Screen.dart';
@@ -15,6 +17,8 @@ class Routeing {
   static final Chats = "Chats";
   static final Status = "status";
   static final Calls = "calls";
+  static final Addstory = "Addstory";
+  static final progressTimelineScreen = "progressTimelineScreen";
 
   static Map<String, Widget Function(BuildContext)> MapOfAppRoutes = {
     Start: (context) => SpachScreen(),
@@ -24,5 +28,7 @@ class Routeing {
     Chats: (context) => chats_screen(),
     Status: (context) => status_screen(),
     Calls: (context) => call_screen(),
+    Addstory: (context) => addstory(),
+    progressTimelineScreen: (context) => SmoothProgressTimelineScreen(),
   };
 }

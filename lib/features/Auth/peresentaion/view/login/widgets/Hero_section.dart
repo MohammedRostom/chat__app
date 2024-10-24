@@ -30,7 +30,7 @@ class Hero_section extends StatelessWidget {
                   "Login to your Account",
                   textAlign: TextAlign.left,
                   style: ThemeText(context).titleLarge!.copyWith(
-                        fontSize: FontSize.H3,
+                        fontSize: FontSize.H2,
                       ),
                 ),
               ),
