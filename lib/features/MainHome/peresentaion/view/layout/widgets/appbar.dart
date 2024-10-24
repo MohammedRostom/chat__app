@@ -1,3 +1,4 @@
+import 'package:Chat_app/StartApp/main.dart';
 import 'package:Chat_app/core/Components/Cust_text.dart';
 import 'package:Chat_app/core/Components/Gap_Releted.dart';
 import 'package:Chat_app/core/Constant/Assets.dart';
@@ -7,6 +8,13 @@ import 'package:Chat_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+final List<String> _options = [
+  'New Group ',
+  'New Broadcast',
+  'Starred Nessage',
+  'Settings',
+];
 
 AppBar cus_Appbar(BuildContext context, tabController) {
   return AppBar(
@@ -24,11 +32,8 @@ AppBar cus_Appbar(BuildContext context, tabController) {
           //     size: 25.r, color: Theme.of(context).iconTheme.color),
 
           ),
-      IconButton(
-        onPressed: () {},
-        icon: Icon(Icons.more_vert_rounded,
-            size: 25.r, color: Theme.of(context).iconTheme.color),
-      ),
+      Gap_Releted(),
+      Drobmenu()
     ],
     title:
         Cust_text(TeStyle: ThemeText(context).titleLarge!, TextT: "Whats Up"),

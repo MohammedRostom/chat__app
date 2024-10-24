@@ -39,7 +39,6 @@ class _AddStoryState extends State<addstory> {
     const Color.fromARGB(255, 172, 103, 1), // Story with orange background
     const Color.fromARGB(255, 102, 26, 116), // Story with purple background
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
