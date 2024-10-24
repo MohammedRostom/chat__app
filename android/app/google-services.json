@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "158070960150",
+    "project_id": "whatssup-ee360",
+    "storage_bucket": "whatssup-ee360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158070960150:android:3e75d4366ec8705ac68537",
+        "android_client_info": {
+          "package_name": "com.example.apply_pagenation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2K0JDKiY9rDX1_jPKJ7ln9ywdHDPxggo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

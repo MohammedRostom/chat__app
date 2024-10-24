@@ -1,9 +1,13 @@
+import 'package:Chat_app/core/Components/Gap_Releted.dart';
+import 'package:Chat_app/core/Constant/screen_size.dart';
+import 'package:Chat_app/core/Theme/Colors.dart';
+import 'package:Chat_app/features/Auth/peresentaion/view/login/loginscreen.dart';
+import 'package:Chat_app/features/Auth/peresentaion/view/splach/widget/whtaspp_Icon.dart';
+import 'package:Chat_app/features/MainHome/peresentaion/view/layout/Layout_home.dart';
 import 'package:flutter/material.dart';
-
-import '../../../../../core/Assets/Assets.dart';
-import '../../../../../core/Constant/ComMettods.dart';
-import '../../../../../core/Constant/constants.dart';
-import '../../../../MainHome/peresentaion/view/Hompage/homePage.dart';
+import '../../../../../core/Components/screenBodySize.dart';
+import '../../../../../core/comm_methods/ComMethods.dart';
+import '../../../../../generated/l10n.dart';
 
 class SpachScreen extends StatefulWidget {
   const SpachScreen({super.key});
@@ -16,47 +20,32 @@ class _SpachScreenState extends State<SpachScreen> {
   @override
   void initState() {
     // TODO: implement initState
-    NavgateTo(context, Widget: homePage(), time: 3);
+    NavgateTo(context, Widget: Loginscreen(), time: 3);
   }
 
   Widget build(BuildContext context) {
+    print(HighOfScreen(context));
+    print(WidthOfScreen(context));
     return Scaffold(
-      body: Container(
-        height: HighOfScreen(context),
-        width: WidthOfScreen(context),
-        child: Column(
+      body: screenBodySize(
+        widget: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Column(
               children: [
                 whatsUpIcon(),
-                Text("This The Bes App  For this Country ",
-                    style: TextStyle(fontSize: 12, color: Colors.green))
+                Gap_Releted(),
+                Text(S.of(context).Best_app,
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleSmall!
+                        .copyWith(color: AppColors.PrimaryContainerColor))
               ],
             )
           ],
         ),
       ),
-    );
-  }
-}
-
-class whatsUpIcon extends StatelessWidget {
-  const whatsUpIcon({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset(
-          Assets.Logo,
-          width: 150,
-        ),
-        Text("Whats up")
-      ],
     );
   }
 }
